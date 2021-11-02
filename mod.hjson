@@ -8,7 +8,7 @@ name: "aam"
 author: "You"
 
 #the fully qualified main class of the mod
-main: "aam.Aam"
+main: "aam.aam"
 
 #the mod description as seen in the mod dialog
 description: "A Mindustry Java mod template."
