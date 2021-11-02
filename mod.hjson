@@ -1,20 +1,20 @@
 #the mod name as displayed in-game
-displayName: "Java Mod Template"
+displayName: "Arcane Alloys Mod"
 
 #the internal name of your mod
-name: "example-java-mod"
+name: "arcane-alloys-mod"
 
 #your name
-author: "You"
+author: "ThomasThings"
 
 #the fully qualified main class of the mod
-main: "example.ExampleJavaMod"
+main: "aam.ArcaneAlloysMod"
 
 #the mod description as seen in the mod dialog
-description: "A Mindustry Java mod template."
+description: "A failure of a mindustry mod."
 
 #the mod version
-version: 1.0
+version: 0.1
 
 #the minimum game build required to run this mod
 minGameVersion: 129
