@@ -2,13 +2,13 @@
 displayName: "Arcane Alloys Mod"
 
 #the internal name of your mod
-name: "aam"
+name: "arcane-alloys-mod"
 
 #your name
 author: "You"
 
 #the fully qualified main class of the mod
-main: "aam.aam"
+main: "aam.ArcaneAlloysMod"
 
 #the mod description as seen in the mod dialog
 description: "A Mindustry Java mod template."
