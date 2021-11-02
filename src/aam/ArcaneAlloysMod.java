@@ -16,6 +16,7 @@ import mindustry.type.*;
 import mindustry.ui.*;
 import mindustry.world.*;
 import mindustry.world.blocks.*;
+import aam.content.*;
 
 import static java.lang.Float.*;
 import static mindustry.Vars.*;
