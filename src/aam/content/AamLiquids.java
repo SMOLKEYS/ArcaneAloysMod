@@ -11,7 +11,7 @@ public class AamLiquids implements ContentList {
     public void load(){
         thermolite = new Liquid("thermolite", Color.valueOf("e2c16d")){{
             temperature = 2f;
-            effect = StatusEffects.melting; StatusEffects.burning;
+            effect = StatusEffects.melting, StatusEffects.burning;
             lightColor = Color.valueOf("f0511d").a(0.4f);
         }};
         wintiriumCoolant = new Liquid("wintirium-coolant", Color.valueOf("e2c16d")){{

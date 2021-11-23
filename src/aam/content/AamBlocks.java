@@ -44,7 +44,7 @@ public class AamBlocks implements ContentList {
     //power
     dysonPanel, electronitePowerBank, electroniteSubstation, arcaneBattery,
     //production
-    compactDrill, arcaneDrill
+    compactDrill, arcaneDrill;
     //storage
 
     //turrets
@@ -57,7 +57,9 @@ public class AamBlocks implements ContentList {
 
 	//EndEnvironment
 		
-	//Ores  
+	//Ores
+	@Override
+	public void load(){
     oreMagmerite = new OreBlock(AamItems.magmerite){{
             oreDefault = true;
             oreThreshold = 0.81f;
@@ -487,5 +489,6 @@ public class AamBlocks implements ContentList {
 	//Experimental
 		
 	//EndExperimental
+	}
     }
 }
