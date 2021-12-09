@@ -203,7 +203,7 @@ public class AamBlocks implements ContentList {
             ambientSound = Sounds.smelter;
             ambientSoundVolume = 0.4f;
 
-            consumes.items((Items.plastanium, 8, Items.surgeAlloy, 5, AamItems.arcum, 12);
+            consumes.items(Items.plastanium, 8, Items.surgeAlloy, 5, AamItems.arcum, 12);
             consumes.power(12f);
             consumes.liquid(AamLiquids.wintiriumCoolant, 2);
         }};
