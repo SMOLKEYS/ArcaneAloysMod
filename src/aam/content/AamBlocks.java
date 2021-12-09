@@ -304,12 +304,12 @@ public class AamBlocks implements ContentList {
             schematicPriority = 10;
             lightningChance = 0.2f;
         }};
-        carbonicAlloyWall = new Wall("carbonic-alloy-wall-huge"){{
+        carbonicAlloyWall = new Wall("carbonic-alloy-wall"){{
             requirements(Category.defense, with(AamItems.carbonicAlloy, 6));
             health = 330 * wallHealthMultiplier;
             size = 1;
         }};
-        carbonicAlloyWallLarge = new Wall("carbonic-alloy-wall-huge"){{
+        carbonicAlloyWallLarge = new Wall("carbonic-alloy-wall-large"){{
             requirements(Category.defense, with(AamItems.carbonicAlloy, 24));
             health = 330 * 4 * wallHealthMultiplier;
             size = 2;
@@ -319,12 +319,12 @@ public class AamBlocks implements ContentList {
             health = 330 * 9 * wallHealthMultiplier;
             size = 3;
         }};
-        blastAlloyWall = new Wall("blast-alloy-wall-huge"){{
+        blastAlloyWall = new Wall("blast-alloy-wall"){{
             requirements(Category.defense, with(AamItems.blastAlloy, 6));
             health = 280 * wallHealthMultiplier;
             size = 1;
         }};
-        blastAlloyWallLarge = new Wall("blast-alloy-wall-huge"){{
+        blastAlloyWallLarge = new Wall("blast-alloy-wall-large"){{
             requirements(Category.defense, with(AamItems.blastAlloy, 24));
             health = 280 * 4 * wallHealthMultiplier;
             size = 2;
@@ -334,12 +334,12 @@ public class AamBlocks implements ContentList {
             health = 280 * 9 * wallHealthMultiplier;
             size = 3;
         }};
-        plastidAlloyWall = new Wall("plastid-alloy-wall-huge"){{
+        plastidAlloyWall = new Wall("plastid-alloy-wall"){{
             requirements(Category.defense, with(AamItems.plastidAlloy, 6));
             health = 340 * wallHealthMultiplier;
             size = 1;
         }};
-        plastidAlloyWallLarge = new Wall("plastid-alloy-wall-huge"){{
+        plastidAlloyWallLarge = new Wall("plastid-alloy-wall-large"){{
             requirements(Category.defense, with(AamItems.plastidAlloy, 24));
             health = 340 * 4 * wallHealthMultiplier;
             size = 2;
@@ -349,12 +349,12 @@ public class AamBlocks implements ContentList {
             health = 340 * 9 * wallHealthMultiplier;
             size = 3;
         }};
-        electrumAlloyWall = new Wall("electrum-alloy-wall-huge"){{
+        electrumAlloyWall = new Wall("electrum-alloy-wall"){{
             requirements(Category.defense, with(AamItems.electrumAlloy, 6));
             health = 390 * wallHealthMultiplier;
             size = 1;
         }};
-        electrumAlloyWallLarge = new Wall("electrum-alloy-wall-huge"){{
+        electrumAlloyWallLarge = new Wall("electrum-alloy-wall-large"){{
             requirements(Category.defense, with(AamItems.electrumAlloy, 24));
             health = 390 * 4 * wallHealthMultiplier;
             size = 2;
@@ -364,12 +364,12 @@ public class AamBlocks implements ContentList {
             health = 390 * 9 * wallHealthMultiplier;
             size = 3;
         }};
-        radioAlloyWall = new Wall("radio-alloy-wall-huge"){{
+        radioAlloyWall = new Wall("radio-alloy-wall"){{
             requirements(Category.defense, with(AamItems.radioAlloy, 6));
             health = 400 * wallHealthMultiplier;
             size = 1;
         }};
-        radioAlloyWallLarge = new Wall("radio-alloy-wall-huge"){{
+        radioAlloyWallLarge = new Wall("radio-alloy-wall-large"){{
             requirements(Category.defense, with(AamItems.radioAlloy, 24));
             health = 400 * 4 * wallHealthMultiplier;
             size = 2;
@@ -379,12 +379,12 @@ public class AamBlocks implements ContentList {
             health = 400 * 9 * wallHealthMultiplier;
             size = 3;
         }};
-        ultimAlloyWall = new Wall("ultim-alloy-wall-huge"){{
+        ultimAlloyWall = new Wall("ultim-alloy-wall"){{
             requirements(Category.defense, with(AamItems.ultimAlloy, 15));
             health = 630 * wallHealthMultiplier;
             size = 1;
         }};
-        ultimAlloyWallLarge = new Wall("ultim-alloy-wall-huge"){{
+        ultimAlloyWallLarge = new Wall("ultim-alloy-wall-large"){{
             requirements(Category.defense, with(AamItems.ultimAlloy, 60));
             health = 630 * 4 * wallHealthMultiplier;
             size = 2;
@@ -394,7 +394,7 @@ public class AamBlocks implements ContentList {
             health = 630 * 9 * wallHealthMultiplier;
             size = 3;
         }};
-        ultimAlloyWallGigantic = new Wall("ultim-alloy-wall-huge"){{
+        ultimAlloyWallGigantic = new Wall("ultim-alloy-wall-gigantic"){{
             requirements(Category.defense, with(AamItems.ultimAlloy, 240, AamItems.arcaneAlloy, 60));
             health = 630 * 16 * wallHealthMultiplier;
             size = 4;
