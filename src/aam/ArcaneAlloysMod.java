@@ -34,7 +34,7 @@ public class ArcaneAlloysMod extends Mod{
             new AamBlocks()
             //new aamSectors(),
             //new aamPlanets(),
-    }
+    };
 
     @Override
     public void loadContent() {
