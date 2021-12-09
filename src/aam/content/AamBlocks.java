@@ -237,8 +237,8 @@ public class AamBlocks implements ContentList {
             hasPower = true;
 
             consumes.power(9f);
-            consumes.items(with(Items.copper, 18, Items.lead, 18, Items.titanium, 15, Items.silicon, 10, AamItems.volatite, 3);
-            consumes.liquid(Liquids.cryofluid, 0.5f));
+            consumes.items(with(Items.copper, 18, Items.lead, 18, Items.titanium, 15, Items.silicon, 10, AamItems.volatite, 3));
+            consumes.liquid(Liquids.cryofluid, 0.5f);
         }};
 	//EndCrafting
 	
