@@ -18,30 +18,27 @@ import mindustry.world.*;
 import mindustry.world.blocks.*;
 import aam.content.*;
 
-import static java.lang.Float.*;
 import static mindustry.Vars.*;
 
 public class ArcaneAlloysMod extends Mod{
-
+    
+    public ArcaneAlloysMod(){
+        Log.info("yes");
+    }
+    
     private final ContentList[] aamContent = {
-            new aamLiquids(),
-            new aamItems(),
+            new AamLiquids(),
+            new AamItems(),
             //new aamBullets(),
             //new aamUnits(),
-            new aamBlocks(),
+            new AamBlocks()
             //new aamSectors(),
             //new aamPlanets(),
-            new aamTechTree()
-    };
-
-    @Override
-    public void init(){
-        Vars.enableConsole = true;
     }
 
     @Override
     public void loadContent() {
-        for (ContentList list : aamContent) {
+        for(ContentList list : aamContent){
             list.load();
         }
     }

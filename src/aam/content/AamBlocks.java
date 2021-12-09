@@ -248,7 +248,7 @@ public class AamBlocks implements ContentList {
             int wallHealthMultiplier = 4;
 
         electroniteWall = new Wall("electronite-wall"){{
-            requirements(Category.defense, with(AamItems.electronite, 6,));
+            requirements(Category.defense, with(AamItems.electronite, 6));
             health = 190 * wallHealthMultiplier;
             size = 1;
         }};
@@ -258,17 +258,17 @@ public class AamBlocks implements ContentList {
             size = 2;
         }};
         arcumWall = new Wall("arcum-wall"){{
-            requirements(Category.defense, with(AamItems.arcum, 6, Items.Titanium, 3));
+            requirements(Category.defense, with(AamItems.arcum, 6, Items.titanium, 3));
             health = 210 * wallHealthMultiplier;
             size = 1;
         }};
         arcumWallLarge = new Wall("arcum-wall-large"){{
-            requirements(Category.defense, with(AamItems.arcum, 24, Items.Titanium, 12));
+            requirements(Category.defense, with(AamItems.arcum, 24, Items.titanium, 12));
             health = 210 * 4 * wallHealthMultiplier;
             size = 2;
         }};
         arcaneAlloyWall = new Wall("arcane-alloy-wall"){{
-            requirements(Category.defense, with(AamItems.arcaneAlloy, 10, Items.Thorium, 5 Items.plastanium, 5));
+            requirements(Category.defense, with(AamItems.arcaneAlloy, 10, Items.thorium, 5, Items.plastanium, 5));
             health = 350 * wallHealthMultiplier;
             size = 1;
             insulated = true;
@@ -277,7 +277,7 @@ public class AamBlocks implements ContentList {
             lightningChance = 0.2f;
         }};
         arcaneAlloyWallLarge = new Wall("arcane-alloy-wall-large"){{
-            requirements(Category.defense, with(AamItems.arcaneAlloy, 40, Items.Thorium, 20 Items.plastanium, 20));
+            requirements(Category.defense, with(AamItems.arcaneAlloy, 40, Items.thorium, 20, Items.plastanium, 20));
             health = 350 * 4 * wallHealthMultiplier;
             size = 2;
             insulated = true;
@@ -286,7 +286,7 @@ public class AamBlocks implements ContentList {
             lightningChance = 0.2f;
         }};
         arcaneAlloyWallHuge = new Wall("arcane-alloy-wall-huge"){{
-            requirements(Category.defense, with(AamItems.arcaneAlloy, 90, Items.Thorium, 45 Items.plastanium, 45));
+            requirements(Category.defense, with(AamItems.arcaneAlloy, 90, Items.thorium, 45, Items.plastanium, 45));
             health = 350 * 9 * wallHealthMultiplier;
             size = 3;insulated = true;
             absorbLasers = true;
@@ -294,7 +294,7 @@ public class AamBlocks implements ContentList {
             lightningChance = 0.2f;
         }};
         arcaneAlloyWallGigantic = new Wall("arcane-alloy-wall-gigantic"){{
-            requirements(Category.defense, with(AamItems.arcaneAlloy, 160, Items.Thorium, 80, Items.plastanium, 80));
+            requirements(Category.defense, with(AamItems.arcaneAlloy, 160, Items.thorium, 80, Items.plastanium, 80));
             health = 350 * 16 * wallHealthMultiplier;
             size = 4;insulated = true;
             absorbLasers = true;
@@ -418,13 +418,13 @@ public class AamBlocks implements ContentList {
             powerProduction = 30f;
         }};
 	electronitePowerBank = new Battery("electronite-power-bank"){{
-            requirements(Category.power, with(Items.silicon, 150 Items.surgeAlloy, 50 AamItems.electronite, 75));
+            requirements(Category.power, with(Items.silicon, 150, Items.surgeAlloy, 50, AamItems.electronite, 75));
             size = 4;
             consumes.powerBuffered(800000f);
             baseExplosiveness = 25f;
         }};	
     electroniteSubstation = new PowerNode("electronite-substation"){{
-            requirements(Category.power, with(Items.silicon, 70, Items.thorium, 60 AamItems.electronite, 145 AamItems.arcum, 95));
+            requirements(Category.power, with(Items.silicon, 70, Items.thorium, 60, AamItems.electronite, 145, AamItems.arcum, 95));
             size = 4;
             maxNodes = 3;
             laserRange = 110f;
@@ -490,5 +490,4 @@ public class AamBlocks implements ContentList {
 		
 	//EndExperimental
 	}
-    }
 }
