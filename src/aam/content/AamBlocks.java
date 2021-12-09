@@ -11,6 +11,7 @@ import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.type.*;
 import mindustry.world.*;
+import mindustry.world.draw.*;
 import mindustry.world.blocks.distribution.*;
 import mindustry.world.blocks.power.*;
 import mindustry.world.blocks.production.*;
@@ -136,7 +137,7 @@ public class AamBlocks implements ContentList {
             hasPower = true;
 
             consumes.power(1.8f);
-            consumes.item(Items.sand, 1, Items.coal, 3, Items.blastCompound, 4);
+            consumes.items(Items.sand, 1, Items.coal, 3, Items.blastCompound, 4);
             consumes.liquid(Liquids.cryofluid, 0.2f);
         }};
     differentialCompoundCrucible = new GenericCrafter("differential-compound-crucible"){{
@@ -152,7 +153,7 @@ public class AamBlocks implements ContentList {
             hasPower = true;
 
             consumes.power(5f);
-            consumes.item(AamItems.magmerite, 10, AamItems.volatite, 5);
+            consumes.items(AamItems.magmerite, 10, AamItems.volatite, 5);
             consumes.liquid(AamLiquids.wintiriumCoolant, 2f);
         }};
     electroniteCompiler = new GenericCrafter("electronite-compiler"){{
@@ -168,7 +169,7 @@ public class AamBlocks implements ContentList {
             hasPower = true;
 
             consumes.power(6.5f);
-            consumes.item(Items.silicon, 2, Items.surgeAlloy, 1);
+            consumes.items(Items.silicon, 2, Items.surgeAlloy, 1);
         }};
     arcumConverter = new AttributeCrafter("arcum-converter"){{
             requirements(Category.crafting, with(Items.silicon, 240, Items.titanium, 220, Items.thorium, 130, AamItems.arcanite, 120));
@@ -202,7 +203,7 @@ public class AamBlocks implements ContentList {
             ambientSound = Sounds.smelter;
             ambientSoundVolume = 0.4f;
 
-            consumes.items(with(Items.plastanium, 8, Items.surgeAlloy, 5, AamItems.arcum, 12));
+            consumes.items((Items.plastanium, 8, Items.surgeAlloy, 5, AamItems.arcum, 12);
             consumes.power(12f);
             consumes.liquid(AamLiquids.wintiriumCoolant, 2);
         }};
@@ -220,11 +221,11 @@ public class AamBlocks implements ContentList {
             ambientSound = Sounds.smelter;
             ambientSoundVolume = 0.07f;
 
-            consumes.items(with(Items.coal, 30, Items.sand, 50, AamItems.volatite, 10));
+            consumes.items(Items.coal, 30, Items.sand, 50, AamItems.volatite, 10);
             consumes.power(15f);
         }};
     arcanicSurgeSmelter = new GenericCrafter("arcanic-surge-smelter"){{
-            requirements(Category.crafting, with(Items.silicon, 240, Items.titanium, 135, Items.thorium, 120, Items.surge, 95, AamItems.arcum, 110));
+            requirements(Category.crafting, with(Items.silicon, 240, Items.titanium, 135, Items.thorium, 120, Items.surgeAlloy, 95, AamItems.arcum, 110));
 
             craftEffect = Fx.pulverizeMedium;
             outputItem = new ItemStack(Items.surgeAlloy, 4);

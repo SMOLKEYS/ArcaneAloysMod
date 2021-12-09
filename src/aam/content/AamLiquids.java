@@ -1,5 +1,6 @@
 package aam.content;
 
+import mindustry.content.*;
 import arc.graphics.*;
 import mindustry.ctype.*;
 import mindustry.type.*;

@@ -14,7 +14,7 @@ import mindustry.graphics.*;
 import mindustry.type.*;
 
 public class AamItems implements ContentList {
-    public static Item wintirium, subZero, magmerite, differentialCompound, electronite, arcanite, arcum, arcaneAlloy;
+    public static Item wintirium, subZero, magmerite, differentialCompound, electronite, arcanite, arcum, arcaneAlloy, blastAlloy, plastidAlloy, electrumAlloy, radioAlloy, ultimAlloy, volatite, carbonicAlloy;
 
     @Override
     public void load(){
@@ -74,5 +74,9 @@ public class AamItems implements ContentList {
             hardness = 1;
             cost = 0.667f;
 	}};
+        volatite = new Item("volatite", Color.valueOf("0a0a0a")){{
+            hardness = 1;
+            cost = 0.667f;
+    }};
     }
 }
