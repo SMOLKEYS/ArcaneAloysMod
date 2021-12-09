@@ -153,7 +153,7 @@ public class AamBlocks implements ContentList {
             hasPower = true;
 
             consumes.power(5f);
-            consumes.items(AamItems.magmerite, 10, AamItems.volatite, 5);
+            consumes.items(with(AamItems.magmerite, 10, AamItems.volatite, 5));
             consumes.liquid(AamLiquids.wintiriumCoolant, 2f);
         }};
     electroniteCompiler = new GenericCrafter("electronite-compiler"){{
